@@ -1,0 +1,60 @@
+Project Overvew:
+Mern stack app: Note app by 
+Learning from-: roadside coder
+------------------------------------------------
+
+Phase 1: Requred things
+
+***********Install****************** 
+-Node js,
+-git
+-postman
+-Extensions in vs code 
+A): ES7 Redux,GraphQl,React native snippets
+B):Prettier Code Formatter
+------------------------------------------
+
+Phase 2:Project Flow Explained 
+
+********MERN STACK Data Flow*************
+
+React Js : Front End developement
+Ex- Get api/notes
+
+-React js makes  get request to end point to our express js Web framework
+-Express JS takes api request,interprete it and send to our node js web server 
+-Node js used library called mongoose provides us helpful queries to fetch data from mongo database, it takes all notes from databse and through our web server(Node js ), it sends to our web framework Express js,it interprets in the form of json data and send to react js 
+
+
+***We have different types of request***** 
+-Get- api/notes         to get all  notes 
+-Post- api/notes        to create bote 
+-Put- api/notes/:id     to update note
+-Delete- api/notes/:id  to delete note from database 
+--------------------------------------------------------
+
+Phase 3: Project Cretion Started     
+
+1)Creating Web server using Node js:
+2)Creating Api using Express js :
+
+-npm init
+-npm i express
+
+-creating simple Api using express get,post,put,delete 
+-creating data service where mention array of objects of notes data
+-importing data service inside server.js file 
+-creating get request with api/notes/ and accessing notes and res.send(notes) 
+-created api get specific user data
+
+-Explain about .env file contains all secret information about our project 
+-but to use this file install package -npm i dotenv
+-use inside server.js
+-install -npm i nodemon and add in package.json => "start":"nodemon server.js"
+ 
+
+
+
+
+
+  
